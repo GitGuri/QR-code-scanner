@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library QR Code Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Library QR Code Scanner</h1>
+        <div id="reader"></div>
+        <div id="qrMessage" class="message"></div>
+        <div id="memberDetails" class="details">
+            <h2>Member Details</h2>
+            <div class="detail-item">
+                <span class="label">Name:</span>
+                <span id="memberName" class="value">-</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">ID:</span>
+                <span id="memberId" class="value">-</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Entry Time:</span>
+                <span id="entryTime" class="value">-</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Exit Time:</span>
+                <span id="exitTime" class="value">-</span>
+            </div>
+            <div class="buttons">
+                <button id="proceedButton" class="btn proceed">Proceed</button>
+                <button id="exitButton" class="btn exit">Exit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include the html5-qrcode library -->
+    <script src="html5-qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
